@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "Llama API Collection",
+    "_postman_id": "12345678-abcd-efgh-ijkl-987654321000",
+    "description": "مجموعة طلبات لتجربة Llama API عبر Postman",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Chat with Llama",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer YOUR_API_KEY",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"messages\": [\n    {\"role\": \"user\", \"content\": \"مرحبًا لاما! أعطني مثالًا بسيطًا.\"}\n  ]\n}"
+        },
+        "url": {
+          "raw": "https://api.llama.ai/v1/chat",
+          "protocol": "https",
+          "host": [
+            "api",
+            "llama",
+            "ai"
+          ],
+          "path": [
+            "v1",
+            "chat"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
